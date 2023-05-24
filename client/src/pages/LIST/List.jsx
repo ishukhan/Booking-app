@@ -31,8 +31,8 @@ const List = () => {
               <label>Check-In Date</label>
               <span onClick={() => setOpendate(!opendate)}>{`${format(
                 date[0].startDate,
-                "dd/mm/yyyy"
-              )} to ${format(date[0].endDate, "dd/mm/yyyy")}`}</span>
+                "MM/dd/yyyy"
+              )} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</span>
               {opendate && (
                 <DateRange
                   editableDateInputs={true}

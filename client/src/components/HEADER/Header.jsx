@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
   faCab,
   faCalendarDay,
-  faPerson,
   faPlane,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Header.scss";
 
@@ -55,18 +55,45 @@ const Header = ({ type }) => {
         }
       >
         <div className="headerList">
-          <div className="headerListItem active">
+          <NavLink
+            exact
+            to="/"
+            style={{ textDecoration: "none", color: "black" }}
+            activeClassName="active"
+            className="headerListItem "
+          >
             <FontAwesomeIcon icon={faBed} />
-            <span>Hotel</span>
-          </div>
-          <div className="headerListItem">
+            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+              <span>Hotel</span>
+            </Link>
+          </NavLink>
+          <NavLink
+            exact
+            to="/flight"
+            style={{ textDecoration: "none", color: "black" }}
+            activeClassName="active"
+            className="headerListItem"
+          >
             <FontAwesomeIcon icon={faPlane} />
-            <span>Flight</span>
-          </div>
-          <div className="headerListItem">
+            <Link
+              to="/flight"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <span>Flight</span>
+            </Link>
+          </NavLink>
+          <NavLink
+            exact
+            to="/car"
+            style={{ textDecoration: "none", color: "black" }}
+            activeClassName="active"
+            className="headerListItem"
+          >
             <FontAwesomeIcon icon={faCab} />
-            <span>Car rentals</span>
-          </div>
+            <Link to="/car" style={{ textDecoration: "none", color: "black" }}>
+              <span>Car rentals</span>
+            </Link>
+          </NavLink>
         </div>
         {type !== "list" && (
           <>
@@ -109,7 +136,7 @@ const Header = ({ type }) => {
                 )}
               </div>
               <div className="headerSeacrhItem">
-                <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+                <FontAwesomeIcon icon={faUser} className="headerIcon" />
                 <span
                   onClick={() => setOpenOption(!openOption)}
                   className="headerSearchText"

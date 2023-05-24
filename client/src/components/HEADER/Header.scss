@@ -25,10 +25,13 @@
     gap: 10px;
     cursor: pointer;
   }
-  .headerListItem.active {
+  .active {
     border: 1px solid white;
     padding: 12px;
     border-radius: 20px;
+  }
+  .headerListItem > span {
+    color: white;
   }
 
   .headerDesc {

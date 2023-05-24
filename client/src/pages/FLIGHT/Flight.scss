@@ -1,0 +1,35 @@
+.cab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+
+  .cabitem {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.service {
+  margin-top: 20px;
+  text-align: center;
+
+  .sTiltle {
+    color: #003850;
+    font-weight: 500;
+  }
+  .sDesc {
+    font-weight: 500;
+  }
+
+  .badge {
+    color: green;
+    font-weight: 800;
+    padding: 4px;
+  }
+}
