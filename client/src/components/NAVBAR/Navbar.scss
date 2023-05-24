@@ -1,13 +1,13 @@
 .navbar {
   height: 50px;
-  background-color: #003580;
+  background-color: #3ce8a3;
   display: flex;
   justify-content: center;
 
   .navContainor {
     width: 100%;
     max-width: 1024px;
-    color: whitesmoke;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,8 +19,10 @@
   .navButton {
     margin-left: 20px;
     border: none;
-    padding: 5px 10px;
-    color: #003580;
+    padding: 8px 10px;
+    background-color: #0071c2;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
   }
 }

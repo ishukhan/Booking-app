@@ -1,8 +1,8 @@
 .mail {
   width: 100%;
   margin-top: 50px;
-  background-color: #003580;
-  color: white;
+  background-color: #3ce8a3;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,12 +16,12 @@
   .mailDesc {
     font-size: 15px;
     font-weight: 100;
-    color: lightgray;
+    color: black;
   }
 
   .mailInputcontainor > input {
     width: 300px;
-    height: 35px;
+    height: 38px;
     border: none;
     outline: none;
     padding: 10px;
