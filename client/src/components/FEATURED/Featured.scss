@@ -1,0 +1,35 @@
+.featured {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  .featuredItem {
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 180px;
+  }
+
+  .featuredImg {
+    width: 100%;
+    object-fit: cover;
+  }
+  .featuredImg:hover {
+    transition: 0.8s ease-in-out;
+    transform: scale(1.2);
+  }
+  .featuredTitle {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .featuredTitle h1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
