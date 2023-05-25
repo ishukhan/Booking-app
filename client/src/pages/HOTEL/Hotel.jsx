@@ -92,7 +92,7 @@ const Hotel = () => {
             Exelent 500-miter Mahipalpur New Delhi
           </span>
           <span className="hotelPriceHighlight">
-            Book a stay over ₹ 50049 at this propertiy and free taxi
+            Book a stay over ₹ 5004 at this propertiy and free taxi
           </span>
           <div className="hotelImage">
             {photos.map((photos, i) => (
