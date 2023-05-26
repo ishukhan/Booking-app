@@ -6,8 +6,20 @@
   gap: 40px;
 
   .homeTitle {
-    width: 1024px;
+    max-width: 1024px;
     font-size: 20px;
     font-weight: 700;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .homeTitle {
+    max-width: 900px;
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .homeContainor {
+    position: relative;
+    top: 3em;
   }
 }

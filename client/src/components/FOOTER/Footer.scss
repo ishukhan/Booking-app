@@ -24,3 +24,10 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 1055px) {
+  .footer {
+    max-width: 900px;
+    padding: 0 40px;
+  }
+}

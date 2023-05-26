@@ -91,7 +91,7 @@ const Header = ({ type }) => {
           >
             <FontAwesomeIcon icon={faCab} />
             <Link to="/car" style={{ textDecoration: "none", color: "black" }}>
-              <span>Car rentals</span>
+              <span>Car</span>
             </Link>
           </NavLink>
         </div>
